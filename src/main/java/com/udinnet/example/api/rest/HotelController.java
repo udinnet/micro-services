@@ -1,12 +1,12 @@
-package com.khoubyari.example.api.rest;
+package com.udinnet.example.api.rest;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 
-import com.khoubyari.example.domain.Hotel;
-import com.khoubyari.example.exception.DataFormatException;
-import com.khoubyari.example.service.HotelService;
+import com.udinnet.example.domain.Hotel;
+import com.udinnet.example.exception.DataFormatException;
+import com.udinnet.example.service.HotelService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -19,7 +19,6 @@ import javax.servlet.http.HttpServletResponse;
 /*
  * Demonstrates how to set up RESTful API endpoints using Spring MVC
  */
-
 @RestController
 @RequestMapping(value = "/example/v1/hotels")
 @Api(tags = {"hotels"})
@@ -67,7 +66,6 @@ public class HotelController extends AbstractRestHandler {
                              HttpServletRequest request, HttpServletResponse response) throws Exception {
         Hotel hotel = this.hotelService.getHotel(id);
         checkResourceFound(hotel);
-        //todo: http://goo.gl/6iNAkz
         return hotel;
     }
 
@@ -85,7 +83,6 @@ public class HotelController extends AbstractRestHandler {
         this.hotelService.updateHotel(hotel);
     }
 
-    //todo: @ApiImplicitParams, @ApiResponses
     @RequestMapping(value = "/{id}",
             method = RequestMethod.DELETE,
             produces = {"application/json", "application/xml"})

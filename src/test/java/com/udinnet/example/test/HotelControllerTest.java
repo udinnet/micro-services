@@ -1,13 +1,13 @@
-package com.khoubyari.example.test;
+package com.udinnet.example.test;
 
 /**
  * Uses JsonPath: http://goo.gl/nwXpb, Hamcrest and MockMVC
  */
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.khoubyari.example.Application;
-import com.khoubyari.example.api.rest.HotelController;
-import com.khoubyari.example.domain.Hotel;
+import com.udinnet.example.Application;
+import com.udinnet.example.api.rest.HotelController;
+import com.udinnet.example.domain.Hotel;
 
 import org.junit.Before;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package com.khoubyari.example.domain;
+package com.udinnet.example.domain;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.*;

@@ -1,4 +1,4 @@
-package com.khoubyari.example.api.rest.docs;
+package com.udinnet.example.api.rest.docs;
 
 import com.google.common.base.Predicates;
 
@@ -17,7 +17,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
 @EnableSwagger2
-@ComponentScan("com.khoubyari.example.api.rest")
+@ComponentScan("com.udinnet.example.api.rest")
 public class SwaggerConfig {
 
 

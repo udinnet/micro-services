@@ -1,8 +1,8 @@
-package com.khoubyari.example.api.rest;
+package com.udinnet.example.api.rest;
 
-import com.khoubyari.example.domain.RestErrorInfo;
-import com.khoubyari.example.exception.DataFormatException;
-import com.khoubyari.example.exception.ResourceNotFoundException;
+import com.udinnet.example.domain.RestErrorInfo;
+import com.udinnet.example.exception.DataFormatException;
+import com.udinnet.example.exception.ResourceNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationEventPublisher;

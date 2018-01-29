@@ -1,4 +1,4 @@
-package com.khoubyari.example;
+package com.udinnet.example;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,8 +20,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 @Configuration
 @EnableAutoConfiguration  // Sprint Boot Auto Configuration
-@ComponentScan(basePackages = "com.khoubyari.example")
-@EnableJpaRepositories("com.khoubyari.example.dao.jpa") // To segregate MongoDB and JPA repositories. Otherwise not needed.
+@ComponentScan(basePackages = "com.udinnet.example")
+@EnableJpaRepositories("com.udinnet.example.dao.jpa") // To segregate MongoDB and JPA repositories. Otherwise not needed.
 public class Application extends SpringBootServletInitializer {
 
     private static final Class<Application> applicationClass = Application.class;
